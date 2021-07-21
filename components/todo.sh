@@ -37,5 +37,5 @@ Stat $?
 
 Head "Setup the systemd Service"
 mv systemd.service /etc/systemd/system/todo.service &>>$LOG
-systemctl daemon-reload && systemctl start todo && systemctl enable todo &>>$LOG
+systemctl daemon-reload && systemctl start todo && systemctl enable todo  && systemctl status todo &>>$LOG
 Stat $?
