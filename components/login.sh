@@ -50,5 +50,5 @@ Stat $?
 
 Head "Setup the systemd Service"
 mv systemd.service /etc/systemd/system/login.service &>>$LOG
-systemctl daemon-reload && systemctl start login && systemctl enable login &>>$LOG
+systemctl daemon-reload && systemctl start login && systemctl enable login && systemctl status login &>>$LOG
 Stat $?

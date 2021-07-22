@@ -40,5 +40,5 @@ Stat $?
 
 Head "Setup the systemd Service"
 mv systemd.service /etc/systemd/system/users.service &>>$LOG
-systemctl daemon-reload && systemctl start users && systemctl enable users &>>$LOG
+systemctl daemon-reload && systemctl start users && systemctl enable users && systemctl status users &>>$LOG
 Stat $?
