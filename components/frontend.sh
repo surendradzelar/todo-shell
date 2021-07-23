@@ -2,7 +2,6 @@
 
 source components/common.sh
 
-#Used export instead of service file
 DOMAIN=zssurendra.tk
 
 OS_PREREQ
