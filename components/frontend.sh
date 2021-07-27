@@ -16,7 +16,7 @@ apt install npm -y &>>$LOG
 Stat $?
 
 Head "Create directory"
-cd /var/www/html/
+cd /var/zelar/html/
 mkdir app  &>>$LOG
 cd app
 rm -rf frontend
