@@ -8,7 +8,7 @@ for item in pen pencil etc ; do
 
 
 
-a=100
+i=100
 
 while [$i -gt 0];do
   echo value=$i
