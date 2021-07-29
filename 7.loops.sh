@@ -6,10 +6,9 @@ for item in pen pencil etc ; do
   done  
 
 
-
+   i=100
 
 while [$i -gt 0];do
   echo value=$i
   i=$(($i-1))
   done
-i=10
