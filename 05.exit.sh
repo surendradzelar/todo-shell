@@ -1,4 +1,4 @@
 #!/bin/bash
 
-exit 800
+exit 1
 Stat $?
