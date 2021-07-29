@@ -8,7 +8,7 @@ for item in pen pencil etc ; do
 
    i=100
 
-while [$i -gt 0];do
+while [ $i -gt 0 ];do
   echo value=$i
   i=$(($i-1))
   done
