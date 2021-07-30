@@ -13,11 +13,11 @@ Stat $?
 
 Head "Adding user"
 deluser app
-useradd -m -s /bin/bash app &>>$LOG
+useradd -m -s /bin/bash suri &>>$LOG
 Stat $?
 
 Head "Changing directory"
-cd /home/app/
+cd /home/suri/
 Stat $?
 
 Head "Downloading Component"

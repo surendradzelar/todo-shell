@@ -8,7 +8,6 @@ OS_PREREQ
 
 Head "Installing Nginx"
 apt install nginx -y &>>$LOG
-systemctl start nginx
 Stat $?
 
 Head "installing NPM"
@@ -17,8 +16,8 @@ Stat $?
 
 Head "Create directory"
 cd /var/www/html/
-mkdir app  &>>$LOG
-cd app
+mkdir suri &>>$LOG
+cd suri
 rm -rf frontend
 Stat $?
 
@@ -35,8 +34,12 @@ npm run build  &>>$LOG
 Stat $?
 
 Head "Replacing domain names"
-sed -i '32 s/127.0.0.1/login.zssurendra.tk/g' /var/www/html/app/frontend/config/index.js
-sed -i '36 s/127.0.0.1/todo.zssurendra.tk/g' /var/www/html/app/frontend/config/index.js
+sed -i '32 s/127.0.0.1/login.zssurendra.tk/g' /var/www/html/suri/frontend/config/index.js
+sed -i '36 s/127.0.0.1/todo.zssurendra.tk/g' /var/www/html/suri/frontend/config/index.js
+Stat $?
+
+Head "start and restart Nginx"
+systemctl restart nginx &>>$LOG && systemctl start nginx &>>$LOG  && systemctl status nginx &>>$LOG
 Stat $?
 
 Head "Starting NPM"

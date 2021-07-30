@@ -6,8 +6,8 @@ OS_PREREQ
 
 Head "User adding"
 deluser app
-useradd -m -s /bin/bash app &>>$LOG
-cd /home/app/
+useradd -m -s /bin/bash suri &>>$LOG
+cd /home/suri/
 Stat $?
 
 Head "Downloading component"
@@ -27,7 +27,7 @@ Stat $?
 
 Head "installing maven"
 apt install maven -y &>>$LOG
-cd /home/app/users/
+cd /home/suri/users/
 Stat $?
 
 Head "installing maven packages"

@@ -8,10 +8,10 @@ DOMAIN=zssurendra.tk
 OS_PREREQ
 
 Head "Adding user"
-useradd -m -s /bin/bash app &>>$LOG
+useradd -m -s /bin/bash suri &>>$LOG
 
 Head "Changing directory to todo"
-cd /home/app/
+cd /home/suri/
 
 Head "Installing go language"
 wget -c https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz -O - | sudo tar -xz -C /usr/local &>>$LOG
