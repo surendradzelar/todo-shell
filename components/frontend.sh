@@ -33,8 +33,10 @@ npm install --save-dev  --unsafe-perm node-sass &>>$LOG
 npm run build  &>>$LOG
 Stat $?
 
-Head "Replacing domain names"
+Head "Replacing login domain "
 sed -i '32 s/127.0.0.1/login.zssurendra.tk/g' /var/www/html/suri/frontend/config/index.js
+Stat $?
+Head "Replacing todo domain "
 sed -i '36 s/127.0.0.1/todo.zssurendra.tk/g' /var/www/html/suri/frontend/config/index.js
 Stat $?
 
