@@ -12,7 +12,7 @@ apt install npm -y &>>$LOG
 Stat $?
 
 Head "Adding user"
-deluser app
+deluser suri
 useradd -m -s /bin/bash suri &>>$LOG
 Stat $?
 
