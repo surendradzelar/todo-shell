@@ -5,7 +5,7 @@ source components/common.sh
 OS_PREREQ
 
 Head "User adding"
-deluser app
+deluser suri
 useradd -m -s /bin/bash suri &>>$LOG
 cd /home/suri/
 Stat $?
